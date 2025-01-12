@@ -1,0 +1,18 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+# Load environment variables
+DEBUG = os.getenv("DEBUG") == 'true'
+INTERACTION_TYPE = os.getenv("INTERACTION_TYPE")
+BOT_NAME = os.getenv("BOT_NAME")
+LANGUAGE = os.getenv("LANGUAGE")
+PREPROMPT_FILE_PATH = os.getenv("PREPROMPT_FILE_PATH")
+MEMORY_FILE_PATH = os.getenv("MEMORY_FILE_PATH")
+MOMENT_CONTEXT_PLACEHOLDER = os.getenv("MOMENT_CONTEXT_PLACEHOLDER")
+MEMORY_CONTEXT_PLACEHOLDER = os.getenv("MEMORY_CONTEXT_PLACEHOLDER")
+ACTIONS_PLACEHOLDER = os.getenv("ACTIONS_PLACEHOLDER")
+LOG_FILE_PATH = os.getenv("LOG_FILE_PATH")
+TMP_FOLDER_PATH = os.getenv("TMP_FOLDER_PATH")
+BOT_NAME_PLACEHOLDER = os.getenv("BOT_NAME_PLACEHOLDER")
