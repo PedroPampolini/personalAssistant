@@ -1,6 +1,8 @@
 # Project ignores
 Persistence/data/*
 testes-ipynb/*
+**/*.mp3
+credentials/*
 
 
 # Byte-compiled / optimized / DLL files

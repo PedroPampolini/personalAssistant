@@ -50,7 +50,6 @@ class ActionProcesser:
     self.chatController.clearChatHistory()
     self.chatController.addSystemMessage(self.__buildPreprompt())
     self.chatController.addUserMessage(message)
-    print(f"GetReponse")
     response = self.chatController.getResponse()
     return response[-1]["content"]
   
@@ -58,7 +57,6 @@ class ActionProcesser:
     maxTries = 3
     for attempt in range(maxTries):
       try:
-        print(f"User message: {userMessage}")
         actionString = self.createPrePromptedMessage(userMessage)
         action = self.getAction(actionString)
         response = action.execute()

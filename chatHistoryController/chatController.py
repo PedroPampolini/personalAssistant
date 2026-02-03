@@ -31,7 +31,6 @@ class ChatHistoryController:
       json.dump(self.chatHistory, f, ensure_ascii=False, indent=2)
    
   def getResponse(self) -> GptChatHistory:
-    print(f"Chat history before getResponse: {self.chatHistory}")
     responseContent = getResponse(self.chatHistory)
     self.addAssistantMessage(responseContent)
     return self.chatHistory
