@@ -1,0 +1,4 @@
+# caso alterar o valor de algum desses placeholders, altere no preprompt também
+ACTIONS_FORMATED_LIST_PLACEHOLDER = "{{ACTIONS-FORMATED-LIST}}" 
+CONTEXT_FORMATED_LIST_PLACEHOLDER = "{{CONTEXT-FORMATED-LIST}}"
+USER_MEMORY_TOKEN = "{{USER-MEMORY-FORMATED-LIST}}"
