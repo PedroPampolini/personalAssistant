@@ -13,12 +13,6 @@ class GoogleAgendaService:
     self.__credentials = None
     token_path = os.path.join(os.path.dirname(__file__), "..", "..", "credentials", "google-api-token.json")
     creds_path = os.path.join(os.path.dirname(__file__), "..", "..", "credentials", "google-api-credentials.json")
-    
-    # debug remover dps
-    if(not os.path.exists(token_path)):
-      print("aaaaaa nao achou o path do token", token_path)
-    if(not os.path.exists(creds_path)):
-      print("aaaaaa nao achou o path das credenciais", creds_path)
       
     if(os.path.exists(token_path)):
       self.__credentials = Credentials.from_authorized_user_file(token_path, self.__google_calendar_scopes)
