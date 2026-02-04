@@ -130,7 +130,7 @@ class GetScheduledEventsAction(BaseAction):
       prePromptText += json.dumps(event, indent=4, ensure_ascii=False) + "\n"
     prePromptText += '''Com base nesses eventos, gere um texto em linguagem natural que descreva cada evento, incluindo título, descrição, horário de início e término. Organize os eventos em ordem cronológica e utilize uma linguagem clara e amigável para facilitar a compreensão do usuário. Cite cada evento de maneira flúida, como se estivesse conversando com o usuário, sem ser robotizado falando cada atributo separadamente.
     Se algum atributo não existir, ignore-o na descrição do evento. Se não houver eventos agendados no período solicitado, informe isso de forma clara ao usuário.
-    NÃO utilize nenhuma formatação especial, como listas ou marcadores. Apenas gere um texto corrido. Ele futuramente será lido em voz alta para o usuário através de um sistema de texto para fala.'''
+    NÃO utilize nenhuma formatação especial, como listas ou marcadores. Apenas gere um texto corrido. Ele futuramente será lido em voz alta para o usuário através de um sistema de texto para fala. Pode corrigir erros de português'''
     
     tempChat = ChatHistoryController()
     tempChat.addSystemMessage(prePromptText)
