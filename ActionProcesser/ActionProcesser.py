@@ -60,6 +60,8 @@ class ActionProcesser:
         actionString = self.createPrePromptedMessage(userMessage)
         action = self.getAction(actionString)
         response = action.execute()
+        # esse response deve poder ser jogado no historico do chat, para ele saber que algo foi executado
+        # esse chat deve ser uma logica mais global, e nao apenas uma action
         if response.get("hasResponse", False):
           return response.get("responseText", "")
         return ""
