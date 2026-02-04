@@ -53,7 +53,7 @@ class ActionProcesser:
     response = self.chatController.getResponse()
     return response[-1]["content"]
   
-  def processAction(self, userMessage: str) -> dict:
+  def processAction(self, userMessage: str) -> str:
     maxTries = 3
     for attempt in range(maxTries):
       try:
