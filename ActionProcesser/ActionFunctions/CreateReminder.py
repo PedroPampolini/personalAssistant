@@ -11,7 +11,7 @@ class GoogleAgendaService:
   def __init__(self):
     self.__google_calendar_scopes = ["https://www.googleapis.com/auth/calendar"]
     self.__credentials = None
-    token_path = os.path.join(os.path.dirname(__file__), "..", "..", "credentials", "google-api-token.json")
+    token_path = os.path.join(os.path.dirname(__file__), "..", "..", "credentials", "google-api-agenda-token.json")
     creds_path = os.path.join(os.path.dirname(__file__), "..", "..", "credentials", "google-api-credentials.json")
       
     if(os.path.exists(token_path)):
