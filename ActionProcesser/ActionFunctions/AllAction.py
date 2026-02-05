@@ -1,6 +1,6 @@
 from ActionProcesser.ActionFunctions.GetScheduledEvents import GetScheduledEventsAction
 from ActionProcesser.ActionFunctions.JustChat import JustChatAction
-from ActionProcesser.ActionFunctions.SendWhatsapp import SendWhatsappAction
+from ActionProcesser.ActionFunctions.Whatsapp.SendWhatsapp import SendWhatsappAction
 from ActionProcesser.ActionFunctions.CreateReminder import CreateReminderAction
 from ActionProcesser.ActionFunctions.SearchWeb import SearchWebAction
 
